@@ -328,7 +328,7 @@ p {
 /* TESTIMONIAL SECTION */
 #testimonial {
 	padding: 15rem 0;
-	overflow-x: hidden;
+	overflow-x:scroll;
 }
 
 #testimonial .all-items {
