@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-  --primary-color: #5924ed;
+  --primary-color: #5b14ae;
   --secondary-black: #0d081a;
   --secondary-gray: #48464b;
   --body-bg: #efebfa;
@@ -62,6 +62,19 @@ p {
 
 .primary-btn:hover {
   background-color: #5901ed;
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--primary-color);
+  border-radius: 50px;
+  border: 2px solid var(--primary-color);
+}
+
+.outline:hover {
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 50px;
 }
 
 .buttons {
@@ -437,6 +450,7 @@ p {
 }
 
 #stats .all-items .item {
+  box-shadow: 0px 0px 20px 0px #4705fc33;
   padding: 2rem;
   border-radius: 12px;
 }
@@ -474,3 +488,93 @@ p {
   }
 }
 /* END STATS SECTION */
+
+/* ABOUT SECTION */
+#about {
+  padding: 15rem 0;
+}
+
+#about .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#about .left {
+  padding: 2rem;
+  text-align: center;
+}
+
+#about .left .card {
+  box-shadow: 0px 0px 20px 0px #4705fc33;
+  padding: 3rem;
+  border-radius: 12px;
+  min-height: 400px;
+}
+
+#about .left .card .img {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+#about .left .card .img img {
+  object-fit: cover;
+}
+
+#about .left .card .card-desc {
+  color: var(--secondary-gray);
+  margin-bottom: 2rem;
+}
+
+#about .left .card .card-name {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+#about .left .card .card-sub-title {
+  font-size: 1.4rem;
+}
+
+#about .subheading {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+#about .right .slogan {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#about .right .right-text {
+  color: var(--secondary-gray);
+}
+
+@media only screen and (max-width: 768px) {
+  #about .wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #about .left .card {
+    min-height: 300px;
+  }
+
+  #about .right {
+    padding: 2.5rem;
+  }
+
+  #about .right .buttons {
+    flex-direction: column;
+  }
+
+  #about .right .buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* END ABOUT SECTION */
